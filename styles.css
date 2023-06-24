@@ -1,0 +1,126 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Outfit, sans-serif;
+    color: var(--white);
+}
+
+:root {
+    /* primary */
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* neutral */
+    --very-dark-blue-main: hsl(217, 54%, 11%);
+    --very-dark-blue-card: hsl(216, 50%, 16%);
+    --very-dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--very-dark-blue-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+.nft-card {
+    background-color: var(--very-dark-blue-card);
+    max-width: 320px;
+    padding: 1.5em;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.nft-card__image {
+    border-radius: 10px;
+    display: block;
+}
+
+.nft-card__title {
+    margin: 1em 0 0.5em;
+}
+
+.nft-card__text {
+    color: var(--soft-blue);
+    font-weight: 300;
+    line-height: 1.8em;
+    margin-bottom: 1em;
+}
+
+.nft-card__details {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.nft-card__price {
+    color: var(--cyan);
+    font-weight: 600;
+    letter-spacing: .03em;
+}
+
+.nft-card__days-left {
+    font-weight: 300;
+    color: var(--soft-blue)
+}
+
+.nft-card hr {
+    background-color: var(--very-dark-blue-line);
+    border: none;
+    height: 1px;
+    margin: 1em 0;
+}
+
+.nft-card__avatar {
+    width: 35px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.nft-card__footer {
+    color: var(--soft-blue);
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.nft-card__footer a {
+    color: var(--white);
+}
+
+.attribution {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

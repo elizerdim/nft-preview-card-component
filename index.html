@@ -4,33 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
   <title>Frontend Mentor | NFT preview card component</title>
 </head>
 <body>
   <article class="nft-card">
-    <img class="nft-card__image" src="./images/image-equilibrium.jpg" alt="colorful glass cube balanced on its vertex">
-    <h2 class="nft-card__title">Equilibrium #3429</h2>
+    <a href="#"><img class="nft-card__image" src="./images/image-equilibrium.jpg" alt="colorful glass cube balanced on its vertex"></a>
+    <a href="#"><h2 class="nft-card__title">Equilibrium #3429</h2></a>
     <p class="nft-card__text">  Our Equilibrium collection promotes balance and calm.</p>
-    <div class="details">
-      <p>
-        <img src="./images/icon-ethereum.svg" alt="ethereum icon">
+    <div class="nft-card__details">
+      <p class="nft-card__price detail">
+        <img class="nft-card__icon" src="./images/icon-ethereum.svg" alt="ethereum icon">
         0.041 ETH
       </p>
-      <p>
-        <img src="./images/icon-clock.svg" alt="clock icon">
+      <p class="nft-card__days-left detail">
+        <img class="nft-card__icon" src="./images/icon-clock.svg" alt="clock icon">
         3 days left
       </p>
     </div>
-    <footer>
-      <img src="./images/image-avatar.png" alt="picture of Jules Wyvern">
-      <p>Creation of Jules Wyvern</p>
+    <hr>
+    <footer class="nft-card__footer">
+      <img class="nft-card__avatar" src="./images/image-avatar.png" alt="picture of Jules Wyvern">
+      <p>Creation of <a href="#">Jules Wyvern</a></p>
     </footer>
   </article>
 
   <footer class="attribution">
     <p>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/elizerdim">Eliz Erdim</a>.
     </p>
   </footer>
 </body>
