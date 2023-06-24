@@ -71,6 +71,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 999;
 }
 
 .nft-card__title-link:active,
@@ -158,6 +159,7 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
+        z-index: 999;
     }
     
     .nft-card__title-link:hover,
